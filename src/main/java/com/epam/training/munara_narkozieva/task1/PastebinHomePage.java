@@ -9,10 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class PastebinHomePage {
+
+
     private final WebDriver driver;
     private final WebDriverWait wait;
-
-
     private final By codeTextarea = By.id("postform-text");
     private final By pasteExpirationDropdown = By.id("select2-postform-expiration-container");
     private final By pasteNameInput = By.id("postform-name");
@@ -30,7 +30,7 @@ public class PastebinHomePage {
             WebElement acceptCookies = wait.until(ExpectedConditions.elementToBeClickable(acceptCookiesButton));
             acceptCookies.click();
         } catch (Exception e) {
-
+            System.out.println("no cookies pop-up appeared");
         }
     }
 
