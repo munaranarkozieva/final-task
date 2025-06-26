@@ -39,7 +39,6 @@ public class LoginPage extends BasePage {
     }
 
     public String getErrorMessage() {
-        // wait up to 10s for the <h3 data-test="error">…
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(errorMessage));
         return getElementText(driver.findElement(errorMessage)).trim();
