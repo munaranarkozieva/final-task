@@ -28,7 +28,6 @@ public class WebDriverFactory {
                     WebDriverManager.edgedriver().setup();
                     System.setProperty("webdriver.edge.driver", "/Users/user/webdrivers/msedgedriver");
                     EdgeOptions options = new EdgeOptions();
-                    options.setBinary("/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge");
                     driverThreadLocal.set(new EdgeDriver(options));
                     logger.info("EdgeDriver initialized for thread: " + Thread.currentThread().getId());
                     break;

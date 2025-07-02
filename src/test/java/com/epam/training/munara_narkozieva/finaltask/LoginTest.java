@@ -1,4 +1,4 @@
-package com.epam.training.munara_narkozieva.finalTask;
+package com.epam.training.munara_narkozieva.finaltask;
 
 import com.epam.training.munara_narkozieva.utils.WebDriverFactory;
 import org.junit.jupiter.api.Assertions;

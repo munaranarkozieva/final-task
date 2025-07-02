@@ -1,4 +1,4 @@
-package com.epam.training.munara_narkozieva.finalTask;
+package com.epam.training.munara_narkozieva.finaltask;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ public class BasePage {
     }
 
     public void waitForElementVisible(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 

@@ -1,4 +1,4 @@
-package com.epam.training.munara_narkozieva.finalTask;
+package com.epam.training.munara_narkozieva.finaltask;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
